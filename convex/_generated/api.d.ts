@@ -14,6 +14,17 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
+import type * as Schemas_AdoptionRequestsSchema from "../Schemas/AdoptionRequestsSchema.js";
+import type * as Schemas_AssociationsSchema from "../Schemas/AssociationsSchema.js";
+import type * as Schemas_DonationsSchema from "../Schemas/DonationsSchema.js";
+import type * as Schemas_EventParticipantsSchema from "../Schemas/EventParticipantsSchema.js";
+import type * as Schemas_EventsSchema from "../Schemas/EventsSchema.js";
+import type * as Schemas_ParticipantsSchema from "../Schemas/ParticipantsSchema.js";
+import type * as Schemas_VolunteersSchema from "../Schemas/VolunteersSchema.js";
+import type * as Schemas_index from "../Schemas/index.js";
+import type * as controllers_Actions_AssociationsActions from "../controllers/Actions/AssociationsActions.js";
+import type * as controllers_Mutations_AssociationsMutations from "../controllers/Mutations/AssociationsMutations.js";
+import type * as controllers_Queries_AssociationsQueries from "../controllers/Queries/AssociationsQueries.js";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -23,7 +34,19 @@ import type {
  * const myFunctionReference = api.myModule.myFunction;
  * ```
  */
-declare const fullApi: ApiFromModules<{}>;
+declare const fullApi: ApiFromModules<{
+  "Schemas/AdoptionRequestsSchema": typeof Schemas_AdoptionRequestsSchema;
+  "Schemas/AssociationsSchema": typeof Schemas_AssociationsSchema;
+  "Schemas/DonationsSchema": typeof Schemas_DonationsSchema;
+  "Schemas/EventParticipantsSchema": typeof Schemas_EventParticipantsSchema;
+  "Schemas/EventsSchema": typeof Schemas_EventsSchema;
+  "Schemas/ParticipantsSchema": typeof Schemas_ParticipantsSchema;
+  "Schemas/VolunteersSchema": typeof Schemas_VolunteersSchema;
+  "Schemas/index": typeof Schemas_index;
+  "controllers/Actions/AssociationsActions": typeof controllers_Actions_AssociationsActions;
+  "controllers/Mutations/AssociationsMutations": typeof controllers_Mutations_AssociationsMutations;
+  "controllers/Queries/AssociationsQueries": typeof controllers_Queries_AssociationsQueries;
+}>;
 export declare const api: FilterApi<
   typeof fullApi,
   FunctionReference<any, "public">
