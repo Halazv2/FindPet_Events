@@ -1,30 +1,40 @@
-# React + TypeScript + Vite
+# Moroccan Pet Association Events App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This application helps Moroccan pet associations manage and organize events related to outdoor pets, such as adoption drives, fundraisers, and awareness campaigns.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Database Setup](#database-setup)
+- [Usage](#usage)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- Manage associations and their details.
+- Create and organize various types of events.
+- Track pets and their information.
+- Record event participants, donations, and volunteers.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Getting Started
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Prerequisites
+
+    - [Node.js](https://nodejs.org/en/) (v18.0.0 or higher)
+    - [npm](https://www.npmjs.com/)
+    - [Convex](https://www.convex.dev/)
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/Halazv2/FindPet_Events.git
+   ```
+2. Install NPM packages
+   ```sh
+    npm install
+   ```
