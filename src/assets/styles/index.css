@@ -1,0 +1,68 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.cdnfonts.com/css/tt-chocolates");
+
+body {
+  font-family: "TT Chocolates", sans-serif;
+}
+
+@layer base {
+  :root {
+    background-color: #f8f8f8;
+
+    --text-primary: #3f3f3f;
+
+    --bg-accent-default: rgba(0, 95, 184, 1);
+
+    --bg-solid-primary: #f18733;
+
+    --bg-light-primary: #f0f0f0;
+
+    --bg-subtle-primary: rgba(0, 0, 0, 0.04);
+
+    --bg-control-default: rgba(255, 255, 255, 0.7);
+
+    --bg-mica: #f3f3f3;
+    --gradient-mica: rgba(243, 243, 243, 0.5);
+
+    --bg-acrylic-default: rgba(252, 252, 252, 0.85);
+    --bg-acrylic-base: rgba(255, 255, 255, 0.9);
+    --blend-acrylic: normal, luminosity;
+
+    --border-surface-primary: #2c7ef8;
+
+    --shadow-tooltip: 0px 4px 8px rgba(0, 0, 0, 0.14);
+    --shadow-flyout: 0px 8px 16px rgba(0, 0, 0, 0.14);
+
+    --bg-button-primary: #3f3f3f;
+    --bg-button-primary-hover: #2c2c2c;
+  }
+}
+
+@layer utilities {
+  .bg-mica {
+    background: linear-gradient(
+        to top,
+        var(--gradient-mica),
+        var(--gradient-mica)
+      ),
+      var(--bg-mica);
+    background-blend-mode: color, luminosity;
+  }
+
+  .bg-acrylic {
+    background: url(/assets/noise-256.png), var(--bg-acrylic-default);
+    background-blend-mode: var(--blend-acrylic);
+  }
+
+  .bg-acrylic-base {
+    background: url(/assets/noise-256.png), var(--bg-acrylic-base);
+    background-blend-mode: var(--blend-acrylic);
+  }
+}
+
+button {
+  outline: none !important;
+}
