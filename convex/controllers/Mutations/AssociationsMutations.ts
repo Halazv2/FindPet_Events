@@ -18,21 +18,7 @@ export const createAssociations = mutation({
     Description: v.string(),
   },
   handler: async (ctx, args) => {
-    const newAssociationsId = await ctx.db.insert("Associations", {
-      AssociationName: args.AssociationName,
-      ContactEmail: args.ContactEmail,
-      ContactPerson: args.ContactPerson,
-      ContactPhone: args.ContactPhone,
-      Location: args.Location,
-      Address: args.Address,
-      City: args.City,
-      State: args.State,
-      Zip: args.Zip,
-      Country: args.Country,
-      Website: args.Website,
-      Logo: args.Logo,
-      Description: args.Description,
-    });
+    const newAssociationsId = await ctx.db.insert("Associations", args);
     return newAssociationsId;
   },
 });
