@@ -66,3 +66,7 @@ body {
 button {
   outline: none !important;
 }
+
+.debug {
+  @apply border-2 border-red-500;
+}
