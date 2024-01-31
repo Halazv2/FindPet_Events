@@ -13,7 +13,7 @@ export default function Footer() {
             <div key={item.name} className="pb-6">
               <a
                 href={item.href}
-                className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                className="text-sm text-gray-600 hover:text-gray-900 leading-6"
               >
                 {item.name}
               </a>
@@ -32,7 +32,7 @@ export default function Footer() {
             </a>
           ))}
         </div>
-        <p className="mt-10 text-center text-xs leading-5 text-gray-500">
+        <p className="text-xs text-gray-500 mt-10 text-center leading-5">
           &copy; 2020 Your Company, Inc. All rights reserved.
         </p>
       </div>

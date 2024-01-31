@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 
 interface ButtonIconProps {
   icon: ReactNode;
-  onClick: () => void;
+  onClick?: () => void;
   className?: string;
   text?: string;
 }
@@ -11,13 +11,13 @@ const ButtonIcon: React.FC<ButtonIconProps> = ({
   icon,
   onClick,
   className,
-  text,
+  text
 }) => {
   return (
     <button
-      className={`flex items-center justify-center py-1.5 px-4 rounded bg-button-primary hover:bg-button-primary-hover
+      className={`flex items-center justify-center rounded bg-button-primary px-4 py-1.5 text-white
        transition duration-300 ease-in-out
-       text-white ${className ?? ""}`}
+       hover:bg-button-primary-hover ${className ?? ""}`}
       onClick={onClick}
     >
       {icon}

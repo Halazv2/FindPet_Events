@@ -13,7 +13,7 @@ export default function Header() {
   const navigate = useNavigate();
 
   return (
-    <header className="bg-white container mx-auto rounded mt-2 ">
+    <header className="container mx-auto bg-white md:mt-2 md:rounded lg:mt-2 lg:rounded ">
       <nav
         className="flex items-center justify-between p-4 lg:px-8"
         aria-label="Global"
@@ -27,7 +27,7 @@ export default function Header() {
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            className="text-gray-700 -m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
@@ -39,16 +39,13 @@ export default function Header() {
             <Link
               key={item.name}
               to={item.href}
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm text-gray-900 font-semibold leading-6"
             >
               {item.name}
             </Link>
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          {/* <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-            Log in <span aria-hidden="true">&rarr;</span>
-          </a> */}
           <ButtonIcon
             icon={<img src={PawsIcon} className="w-8" />}
             text="Log in"
@@ -79,7 +76,7 @@ export default function Header() {
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="text-gray-700 -m-2.5 rounded-md p-2.5"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
@@ -93,7 +90,7 @@ export default function Header() {
                   <Link
                     key={item.name}
                     to={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="text-base text-gray-900 -mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 hover:bg-gray-50"
                   >
                     {item.name}
                   </Link>
