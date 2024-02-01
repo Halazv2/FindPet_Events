@@ -4,5 +4,5 @@ export const navigation = [
   { name: "Associations", href: "#" },
   { name: "Donate", href: "#" },
   { name: "Volunteer", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Contact", href: "#" }
 ];

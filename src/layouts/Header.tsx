@@ -1,16 +1,18 @@
-import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { navigation } from "@utils/constants";
+import { Link, useNavigate } from "@tanstack/react-router";
+import { useState } from "react";
+
 import ButtonIcon from "@components/Buttons/BottonIcon.tsx";
+
+import { navigation } from "@utils/constants";
+
 import LogoIcon from "@assets/svgs/logo.svg";
 import PawsIcon from "@assets/svgs/paws.svg";
 
-import { Link, useNavigate } from "react-router-dom";
 export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
   const navigate = useNavigate();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="container mx-auto bg-white md:mt-2 md:rounded lg:mt-2 lg:rounded ">
@@ -52,7 +54,7 @@ export default function Header() {
             className="gap-x-1"
             onClick={() => {
               console.log("click");
-              navigate("/login");
+              navigate("/");
             }}
           />
         </div>
