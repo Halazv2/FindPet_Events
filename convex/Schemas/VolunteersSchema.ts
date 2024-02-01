@@ -7,5 +7,5 @@ export const VolunteersSchema = defineTable({
   ParticipantID: v.id("Participants"),
   VolunteerDate: v.string(),
   VolunteerTime: v.string(),
-  VolunteerMessage: v.string(),
+  VolunteerMessage: v.string()
 }).index("AssociationID", ["AssociationID"]);

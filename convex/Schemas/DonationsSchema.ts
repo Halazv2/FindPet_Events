@@ -8,5 +8,5 @@ export const DonationsSchema = defineTable({
   DonationAmount: v.number(),
   DonationDate: v.string(),
   DonationTime: v.string(),
-  DonationMessage: v.string(),
+  DonationMessage: v.string()
 }).index("AssociationID", ["AssociationID"]);

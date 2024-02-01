@@ -7,5 +7,5 @@ export const AdoptionRequestsSchema = defineTable({
   ParticipantID: v.id("Participants"),
   AdoptionRequestDate: v.string(),
   AdoptionRequestTime: v.string(),
-  AdoptionRequestMessage: v.string(),
+  AdoptionRequestMessage: v.string()
 }).index("AssociationID", ["AssociationID"]);

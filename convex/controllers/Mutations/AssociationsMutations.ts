@@ -1,5 +1,6 @@
-import { mutation } from "../../_generated/server";
 import { v } from "convex/values";
+
+import { mutation } from "../../_generated/server";
 
 export const createAssociations = mutation({
   args: {
@@ -15,10 +16,10 @@ export const createAssociations = mutation({
     Country: v.string(),
     Website: v.string(),
     Logo: v.id("_storage"),
-    Description: v.string(),
+    Description: v.string()
   },
   handler: async (ctx, args) => {
     const newAssociationsId = await ctx.db.insert("Associations", args);
     return newAssociationsId;
-  },
+  }
 });

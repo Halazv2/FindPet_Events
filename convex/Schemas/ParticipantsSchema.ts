@@ -13,5 +13,5 @@ export const ParticipantsSchema = defineTable({
   Zip: v.string(),
   Country: v.string(),
   Image: v.string(),
-  Description: v.string(),
+  Description: v.string()
 });

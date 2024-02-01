@@ -14,5 +14,5 @@ export const AssociationsSchema = defineTable({
   Country: v.string(),
   Website: v.optional(v.string()),
   Logo: v.optional(v.id("_storage")),
-  Description: v.string(),
+  Description: v.string()
 });

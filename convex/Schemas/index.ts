@@ -1,10 +1,10 @@
+import { AdoptionRequestsSchema } from "./AdoptionRequestsSchema";
 import { AssociationsSchema } from "./AssociationsSchema";
+import { DonationsSchema } from "./DonationsSchema";
+import { EventParticipantsSchema } from "./EventParticipantsSchema";
 import { EventsSchema } from "./EventsSchema";
 import { ParticipantsSchema } from "./ParticipantsSchema";
-import { EventParticipantsSchema } from "./EventParticipantsSchema";
-import { DonationsSchema } from "./DonationsSchema";
 import { VolunteersSchema } from "./VolunteersSchema";
-import { AdoptionRequestsSchema } from "./AdoptionRequestsSchema";
 
 export {
   AssociationsSchema,
@@ -13,5 +13,5 @@ export {
   EventParticipantsSchema,
   DonationsSchema,
   VolunteersSchema,
-  AdoptionRequestsSchema,
+  AdoptionRequestsSchema
 };

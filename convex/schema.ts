@@ -1,12 +1,13 @@
 import { defineSchema } from "convex/server";
+
 import {
+  AdoptionRequestsSchema,
   AssociationsSchema,
+  DonationsSchema,
+  EventParticipantsSchema,
   EventsSchema,
   ParticipantsSchema,
-  EventParticipantsSchema,
-  DonationsSchema,
-  VolunteersSchema,
-  AdoptionRequestsSchema,
+  VolunteersSchema
 } from "./Schemas";
 
 export default defineSchema({
@@ -16,5 +17,5 @@ export default defineSchema({
   EventParticipants: EventParticipantsSchema,
   Donations: DonationsSchema,
   Volunteers: VolunteersSchema,
-  AdoptionRequests: AdoptionRequestsSchema,
+  AdoptionRequests: AdoptionRequestsSchema
 });
