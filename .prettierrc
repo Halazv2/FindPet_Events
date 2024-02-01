@@ -9,7 +9,13 @@
   "singleQuote": false,
   "jsxSingleQuote": false,
   "trailingComma": "none",
+  "useTabs": false,
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "arrowParens": "always",
+  "proseWrap": "preserve",
   "importOrder": [
+    "<THIRD_PARTY_MODULES>",
     "^@views/(.*)$",
     "^@components/(.*)$",
     "^@utils/(.*)$",
@@ -21,5 +27,6 @@
     "^[./]"
   ],
   "importOrderSeparation": true,
+  "importOrderCaseInsensitive": true,
   "importOrderSortSpecifiers": true
 }

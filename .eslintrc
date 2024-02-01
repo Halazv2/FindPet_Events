@@ -1,37 +1,55 @@
 {
   "env": {
-    "es6": true
+    "es6": true,
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/typescript",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "prettier",
+    "jsx-a11y",
+    "tailwindcss"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "rules": {
-    "strict": ["error", "global"], // ex: "use strict"
-    "multiline-comment-style": ["error", "starred-block"], // ex: /* */
-    "spaced-comment": ["error", "always"],
-    "semi": ["error", "always"],
-    "semi-spacing": "error",
-    "no-extra-semi": "error",
-    "no-unexpected-multiline": "error",
-    "max-len": ["error", { "code": 80 }],
-    "comma-style": ["error", "last"],
-    "comma-dangle": ["error", "always-multiline"],
-    "indent": ["error", 2],
-    "space-infix-ops": "error",
-    "space-before-blocks": "error",
-    "brace-style": "error",
-    "keyword-spacing": "error",
-    "arrow-spacing": "error",
-    "space-before-function-paren": [
+    "react/prop-types": "warn",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/explicit-function-return-type": [
       "error",
-      {
-        "anonymous": "always",
-        "named": "never",
-        "asyncArrow": "always"
-      }
+      { "allowExpressions": true }
     ],
-    "newline-per-chained-call": "error",
-    "space-in-parens": ["error", "never"],
-    "array-bracket-spacing": ["error", "never"],
-    "object-curly-spacing": ["error", "always"],
-    "comma-spacing": ["error", { "before": false, "after": true }],
-    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 1 }]
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-unsafe-argument": "error",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "tailwindcss/no-custom-classname": "off",
+    "semi": ["error", "always"],
+    "indent": ["error", 2],
+    "quotes": ["error", "double"],
+    "no-extra-semi": "warn",
+    "prettier/prettier": "error"
+  },
+  "settings": {
+    "tailwindcss": {
+      "whitelist": []
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    }
   }
 }
