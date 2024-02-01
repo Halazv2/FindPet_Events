@@ -1,3 +1,4 @@
 build
 coverage
 src/routeTree.gen.ts
+convex/_generated
