@@ -1,7 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "@src/App.tsx";
 import Home from "@views/Home";
-import Layout from "@layouts/index";
 
 export const router = createBrowserRouter([
   {
