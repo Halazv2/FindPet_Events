@@ -1,6 +1,10 @@
 import React from "react";
 
-export const social = [
+export const social: {
+  name: string;
+  href: string;
+  icon: (props: React.SVGProps<SVGSVGElement>) => JSX.Element;
+}[] = [
   {
     name: "Facebook",
     href: "#",
