@@ -25,9 +25,15 @@
       "@styles/*": ["./src/styles/*"],
       "@utils/*": ["./src/utils/*"],
       "@layouts/*": ["./src/layouts/*"],
-      "@src/*": ["./src/*"],
-    },
+      "@src/*": ["./src/*"]
+    }
   },
-  "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }],
+  "include": [
+    "vite.config.ts",
+    ".eslintrc",
+    "src",
+    "convex",
+    "tailwind.config.ts"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

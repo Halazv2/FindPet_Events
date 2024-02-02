@@ -15,7 +15,9 @@
   "arrowParens": "always",
   "proseWrap": "preserve",
   "importOrder": [
-    "<THIRD_PARTY_MODULES>",
+    "react",
+    "@headlessui/react/*",
+    "@tanstack/react-router",
     "^@views/(.*)$",
     "^@components/(.*)$",
     "^@utils/(.*)$",

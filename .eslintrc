@@ -46,14 +46,15 @@
     "indent": ["error", 2],
     "quotes": ["error", "double"],
     "no-extra-semi": "warn",
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "sort-imports": "off"
   },
   "settings": {
     "tailwindcss": {
       "whitelist": []
     },
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+      "@typescript-eslint/parser": [".ts", ".tsx", ".js"]
     }
   }
 }
