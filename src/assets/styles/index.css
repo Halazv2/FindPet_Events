@@ -13,6 +13,7 @@ body {
     background-color: #f8f8f8;
 
     --text-primary: #3f3f3f;
+    --text-solid-primary: #f18733;
 
     --bg-accent-default: rgba(0, 95, 184, 1);
 
@@ -32,6 +33,7 @@ body {
     --blend-acrylic: normal, luminosity;
 
     --border-surface-primary: #2c7ef8;
+    --border-text-default: #f18733;
 
     --shadow-tooltip: 0px 4px 8px rgba(0, 0, 0, 0.14);
     --shadow-flyout: 0px 8px 16px rgba(0, 0, 0, 0.14);
@@ -50,16 +52,6 @@ body {
       ),
       var(--bg-mica);
     background-blend-mode: color, luminosity;
-  }
-
-  .bg-acrylic {
-    background: url(/assets/noise-256.png), var(--bg-acrylic-default);
-    background-blend-mode: var(--blend-acrylic);
-  }
-
-  .bg-acrylic-base {
-    background: url(/assets/noise-256.png), var(--bg-acrylic-base);
-    background-blend-mode: var(--blend-acrylic);
   }
 }
 
