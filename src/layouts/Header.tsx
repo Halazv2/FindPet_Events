@@ -15,16 +15,16 @@ export default function Header(): JSX.Element {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="container mx-auto bg-white md:mt-2 md:rounded lg:mt-2 lg:rounded ">
+    <header className="container z-10 mx-auto bg-white md:mt-2 md:rounded lg:mt-2 lg:rounded">
       <nav
         className="flex items-center justify-between p-4 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link to="#" className="-m-1.5 p-1.5">
+          <Link to="/" className="-m-1.5 p-1.5">
             <>
               <span className="sr-only">FindPet</span>
-              <img className="h-10 w-auto" src={LogoIcon} alt="find-pet-logo" />
+              <img className="h-10 w-auto" src={LogoIcon} alt="find-pet" />
             </>
           </Link>
         </div>
@@ -55,8 +55,7 @@ export default function Header(): JSX.Element {
             text="Log in"
             className="gap-x-1"
             onClick={() => {
-              console.log("click");
-              navigate("/");
+              navigate({ to: "/" });
             }}
           />
         </div>

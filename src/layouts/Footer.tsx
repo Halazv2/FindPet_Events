@@ -1,7 +1,7 @@
 import { navigation } from "@utils/constants";
 import { social } from "@utils/svgs/socials";
 
-export default function Footer() {
+export default function Footer(): JSX.Element {
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
@@ -28,7 +28,7 @@ export default function Footer() {
               className="text-gray-400 hover:text-gray-500"
             >
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="size-6" aria-hidden="true" />
             </a>
           ))}
         </div>
