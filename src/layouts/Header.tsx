@@ -15,7 +15,7 @@ export default function Header(): JSX.Element {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="container z-10 mx-auto bg-white md:mt-2 md:rounded lg:mt-2 lg:rounded">
+    <header className="container z-20 mx-auto bg-white md:mt-2 md:rounded lg:mt-2 lg:rounded">
       <nav
         className="flex items-center justify-between p-4 lg:px-8"
         aria-label="Global"
