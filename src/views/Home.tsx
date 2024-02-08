@@ -1,8 +1,8 @@
 import React from "react";
 
 import { About } from "@components/home/About";
+import { Events } from "@components/home/Events";
 import { HomeHero } from "@components/home/Hero";
-import { Projects } from "@components/home/Projects";
 import { Sponsors } from "@components/home/Sponsors";
 
 const Home: React.FC = () => {
@@ -14,7 +14,7 @@ const Home: React.FC = () => {
         <About />
       </div>
       <div>
-        <Projects />
+        <Events />
       </div>
     </div>
   );
