@@ -28,16 +28,18 @@ export default function Header(): JSX.Element {
             </>
           </Link>
         </div>
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            className="text-gray-700 -m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
-            onClick={() => setMobileMenuOpen(true)}
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="size-6" aria-hidden="true" />
-          </button>
-        </div>
+        {!mobileMenuOpen && (
+          <div className="flex lg:hidden">
+            <button
+              type="button"
+              className="text-gray-700 -m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
+              onClick={() => setMobileMenuOpen(true)}
+            >
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon className="size-6" aria-hidden="true" />
+            </button>
+          </div>
+        )}
         <div className="hidden lg:flex lg:gap-x-12">
           {navigation.map((item) => (
             <Link
@@ -66,8 +68,8 @@ export default function Header(): JSX.Element {
         open={mobileMenuOpen}
         onClose={setMobileMenuOpen}
       >
-        <div className="fixed inset-0 z-10" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0 z-30 backdrop-blur" />
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-30 w-full overflow-y-auto bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <Link to="#" className="-m-1.5 p-1.5">
               <>
