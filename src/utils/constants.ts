@@ -22,3 +22,10 @@ export const sponsors = [
   { name: Image4, href: "#", alt: "Sponsor 4" },
   { name: Image5, href: "#", alt: "Sponsor 5" }
 ];
+
+export const services = [
+  { name: "Product Design", href: "#" },
+  { name: "Ideation & Strategy", href: "#" },
+  { name: "Web and Mobile", href: "#" },
+  { name: "Embedded Systems", href: "#" }
+];
