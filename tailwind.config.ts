@@ -92,7 +92,9 @@ const backgroundColor = {
 
 const backgroundImage = {
   "hero-pattern": "url('@src/assets/imgs/hero-pattern.png')",
-  shape: "url('src/assets/svgs/shapes/hero-title-shape.svg')"
+  shape: "url('src/assets/svgs/shapes/hero-title-shape.svg')",
+  "services-pattern":
+    "url('@src/assets/svgs/shapes/services/services-bg-shape.svg')"
 };
 
 const borderColor = {
